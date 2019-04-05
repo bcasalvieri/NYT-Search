@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>NYT Search</title>
+</head>
+<body>
+
+  <header class="jumbotron text-center">
+    <h1 class="display-3"><i class="far fa-newspaper"></i> New York Times Search</h1>
+  </header>
+
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <strong>Search Parameters</strong>
+        </div>
+        <div class="card-body">
+          <form>
+            <!-- Search Term: -->
+            <div class="form-group">
+              <label for="search-input">Search Term:</label>
+              <input type="text" id="search-input" class="form-control">
+            </div>
+            <!-- Start Year -->
+            <div class="form-group">
+              <label for="start-year-input">Start Year (Optional):</label>
+              <input type="text" id="start-year-input" class="form-control">
+            </div>
+            <!-- End Year -->
+            <div class="form-group">
+              <label for="end-year-input">Start Year (Optional):</label>
+              <input type="text" id="end-year-input" class="form-control">
+            </div>
+          </form>
+          
+          <!-- Search Button -->
+          <button id="search-button" class="btn"><i class="fas fa-search"></i> Search</button>
+          <!-- Clear Button -->
+          <button id="clear-button" class="btn"><i class="far fa-trash-alt"></i> Clear Results</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-12 col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <strong> Top Articles</strong>
+        </div>
+        <!-- Where articles will be posted -->
+        <div id="top-articles" class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/search.js"></script>
+</body>
+</html>
